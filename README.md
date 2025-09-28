@@ -59,7 +59,7 @@ O protótipo está publicado e disponível no GitHub Pages:
 ├── style.css
 └── app.js
 └── README.md
-
+```
 ### Próximos Passos (Plano de Evolução)
 
 O projeto GranMatch tem um plano de evolução para se tornar uma aplicação completa:
