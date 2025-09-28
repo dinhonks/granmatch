@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GranMatch - Meu Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">GranMatch</div>
+        <nav>
+            <a href="dashboard-aluno.html" class="nav-link">Dashboard</a>
+            <a href="perfil-aluno.html" class="nav-link active">Meu Perfil</a>
+            <a href="vagas.html" class="nav-link">Vagas</a>
+            <a href="#" class="nav-link">Candidaturas</a>
+            <a href="#" id="logout-btn">Sair</a>
+        </nav>
+    </header>
+    <div class="dashboard-container">
+        <div class="card profile-card">
+            <h1>Meu Perfil</h1>
+            <p><strong>Nome:</strong> <span id="profile-name"></span></p>
+            <p><strong>E-mail:</strong> <span id="profile-email"></span></p>
+            <p><strong>Tipo de Usuário:</strong> <span id="profile-type"></span></p>
+            <button id="edit-profile-btn">Editar Perfil</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

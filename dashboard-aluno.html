@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GranMatch - Aluno Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">GranMatch</div>
+        <nav>
+            <a href="#vagas-section" class="nav-link active">Vagas</a>
+            <a href="perfil-aluno.html" class="nav-link">Meu Perfil</a>
+            <a href="candidaturas.html" class="nav-link">Candidaturas</a>
+            <a href="#" id="logout-btn">Sair</a>
+        </nav>
+    </header>
+    <div class="dashboard-container">
+        <h1 id="welcome-message">Bem-vindo, Aluno!</h1>
+        <div class="card-list">
+            <div class="card" id="vagas-section">
+                <div class="card-content">
+                    <h2>Vagas Compatíveis</h2>
+                    <ul id="vagas-list">
+                        </ul>
+                </div>
+            </div>
+            <div class="card" id="candidaturas-section">
+                <div class="card-content">
+                    <h2>Minhas Candidaturas</h2>
+                    <ul id="candidaturas-list">
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais moderna */
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Container principal para login e registro */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: white;
+    padding: 25px; /* Ajustado para um pouco mais de respiro */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Sombra mais suave */
+    text-align: center;
+    width: 100%;
+    max-width: 450px; /* Um pouco mais largo para melhor visualização */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 380px; /* Aumentado para dar mais espaço */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Adicionado margem inferior para separar cards em lista */
+}
+
+/* Estilo específico para o conteúdo dentro dos cards de vaga/talento */
+.card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha o conteúdo ao topo do espaço flexível */
+    width: 100%;
+    text-align: center; /* Centraliza o texto dentro do card-content */
+}
+
+.card-content h2,
+.card-content p {
+    margin-bottom: 10px; /* Espaçamento padrão entre elementos de texto */
+}
+
+.card h1, .card h2 {
+    color: #388E3C; /* Tom de verde mais escuro para títulos */
+    margin-top: 0; /* Remove margem superior padrão */
+    margin-bottom: 15px; /* Mais espaço abaixo dos títulos */
+    font-weight: 600; /* Um pouco mais de peso na fonte */
+}
+
+.card h1 {
+    font-size: 2.2em; /* Título principal maior */
+}
+
+.card p {
+    color: #555;
+    line-height: 1.6; /* Melhor legibilidade */
+    margin-bottom: 15px; /* Mais espaço para parágrafos */
+}
+
+.card strong {
+    color: #333; /* Destaca texto em negrito */
+}
+
+.card form input, .card form select {
+    width: calc(100% - 20px);
+    padding: 12px; /* Padding maior para campos */
+    margin: 8px 0; /* Margem ajustada */
+    border: 1px solid #ddd; /* Borda mais suave */
+    border-radius: 6px; /* Bordas mais arredondadas */
+    font-size: 1em;
+}
+
+.card button {
+    width: 100%;
+    padding: 14px; /* Padding maior para botões */
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 6px; /* Bordas mais arredondadas */
+    cursor: pointer;
+    font-size: 1.1em; /* Fonte maior para botões */
+    margin-top: auto; /* Empurra o botão para a parte inferior */
+    transition: background-color 0.2s ease; /* Transição suave no hover */
+}
+
+.card button:hover {
+    background-color: #43A047; /* Cor mais escura no hover */
+}
+
+.card a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 0.95em;
+    transition: color 0.2s ease;
+}
+
+.card a:hover {
+    color: #388E3C;
+}
+
+.divider {
+    height: 1px;
+    background-color: #eee; /* Cor mais clara para o divisor */
+    margin: 25px 0; /* Mais espaço ao redor do divisor */
+}
+
+/* Header geral */
+header {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 70px; /* Altura mínima consistente */
+    flex-wrap: nowrap;
+}
+
+.logo {
+    font-size: 26px; /* Logo um pouco maior */
+    font-weight: bold;
+    letter-spacing: 0.5px; /* Espaçamento entre letras */
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px; /* Mais espaço entre os links */
+    font-size: 1.05em; /* Fonte ligeiramente maior */
+    padding: 5px 0; /* Padding vertical para a borda inferior */
+    transition: all 0.2s ease;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid white; /* Destaque no hover */
+}
+
+/* Container dos Dashboards */
+.dashboard-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 20px; /* Padding superior e inferior para mais espaço */
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.dashboard-container h1 {
+    font-size: 2.5em; /* Título do dashboard maior */
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 40px; /* Espaço generoso abaixo do título principal */
+    text-align: left; /* Alinhado à esquerda */
+    padding-left: 20px; /* Alinha com o conteúdo dos cards */
+}
+
+/* Lista de Cards (usado em dashboards e vagas) */
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Min-width ajustado */
+    gap: 25px; /* Espaçamento maior entre os cards */
+    margin-top: 0; /* Remove margem superior */
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 20px; /* Padding para as laterais, alinhando com o h1 */
+}
+
+/* Estilo para links ativos na navegação */
+.nav-link.active {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
+/* Estilos específicos para a lista de itens dentro dos cards do dashboard-aluno */
+.card ul {
+    list-style: none; /* Remove bolinhas */
+    padding: 0;
+    margin-top: 20px; /* Espaço acima da lista */
+    text-align: left; /* Alinha os itens da lista à esquerda */
+}
+
+.card ul li {
+    background-color: #f8f8f8; /* Fundo suave para cada item */
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between; /* Distribui texto e botão */
+    align-items: center;
+    font-size: 0.95em;
+    color: #444;
+}
+
+.card ul li button {
+    width: auto; /* Botão menor dentro da lista */
+    padding: 8px 15px;
+    margin-top: 0;
+    font-size: 0.9em;
+    border-radius: 4px;
+    background-color: #5cb85c; /* Verde diferente para botões de ação */
+}
+
+.card ul li button:hover {
+    background-color: #4cae4c;
+}
+
+/* Estilo do perfil (para perfil-aluno.html) */
+.profile-card {
+    max-width: 600px; /* Cartão de perfil um pouco mais largo */
+    margin: 40px auto; /* Centraliza o card de perfil com margem */
+    text-align: left;
+    padding: 30px;
+    min-height: auto; /* Altura flexível para o perfil */
+}
+
+.profile-card p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.profile-card strong {
+    color: #333;
+    margin-right: 5px;
+}
+
+/* Botão de Publicar Nova Vaga no Dashboard da Empresa */
+#new-job-btn {
+    width: auto;
+    padding: 12px 25px;
+    margin-bottom: 30px;
+    margin-left: 20px; /* Alinha com o h1 e cards */
+    background-color: #28A745;
+}
+
+#new-job-btn:hover {
+    background-color: #218838;
+}
+
+/* ========================================= */
+/* Media Queries - Estilos para Responsividade */
+/* ========================================= */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 10px;
+        min-height: auto;
+        flex-wrap: wrap;
+    }
+    header nav {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    header nav a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+    
+    .dashboard-container {
+        padding: 20px 10px; /* Ajusta padding para mobile */
+    }
+
+    .dashboard-container h1 {
+        font-size: 2em;
+        text-align: center; /* Centraliza título principal em mobile */
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .card-list {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px; /* Ajusta padding lateral para mobile */
+    }
+    
+    .card {
+        max-width: 100%;
+        min-height: auto; /* Altura flexível em mobile */
+        padding: 20px;
+    }
+
+    .card ul li {
+        flex-direction: column; /* Empilha texto e botão em mobile */
+        align-items: flex-start;
+    }
+
+    .card ul li button {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    #new-job-btn {
+        margin-left: 0;
+        width: calc(100% - 20px); /* Ocupa a largura total com padding */
+        text-align: center;
+        display: block;
+        margin: 0 auto 30px auto; /* Centraliza o botão */
+    }
+}

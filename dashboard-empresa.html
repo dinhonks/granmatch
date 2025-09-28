@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GranMatch - Empresa Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">GranMatch</div>
+        <nav>
+            <a href="#talentos-section" class="nav-link active">Banco de Talentos</a>
+            <a href="#vagas-empresa-section" class="nav-link">Minhas Vagas</a>
+            <a href="#" id="logout-btn">Sair</a>
+        </nav>
+    </header>
+    <div class="dashboard-container">
+        <h1>Painel da Empresa</h1>
+        <button id="new-job-btn">Publicar Nova Vaga</button>
+        <div class="card-list">
+            <div class="card" id="talentos-section">
+                <div class="card-content">
+                    <h2>Banco de Talentos</h2>
+                    <p>Alunos com habilidades que combinam com suas vagas.</p>
+                    <ul id="talentos-list">
+                        </ul>
+                </div>
+            </div>
+            <div class="card" id="vagas-empresa-section">
+                <div class="card-content">
+                    <h2>Minhas Vagas</h2>
+                    <p>Gerencie as vagas publicadas e veja os candidatos.</p>
+                    <ul id="vagas-empresa-list">
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
