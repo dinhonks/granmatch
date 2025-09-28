@@ -36,8 +36,6 @@ Você pode acessar o projeto online ou rodá-lo localmente em seu computador.
 O protótipo está publicado e disponível no GitHub Pages:
 **[Acesse o GranMatch aqui](https://dinhonks.github.io/granmatch/)**
 
-> **Observação:** O endereço foi ajustado para refletir o nome do seu repositório.
-
 #### 2. Rodar Localmente
 1. Clone este repositório ou baixe os arquivos.
 2. Abra o arquivo `index.html` em seu navegador.
