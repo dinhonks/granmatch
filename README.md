@@ -45,3 +45,15 @@ O protótipo está publicado e disponível no GitHub Pages:
 ---
 
 ### Estrutura do Projeto
+/granmatch
+|
+├── index.html
+├── register.html
+├── dashboard-aluno.html
+├── dashboard-empresa.html
+├── vagas.html
+├── perfil-aluno.html
+├── candidaturas.html
+├── style.css
+└── app.js
+└── README.md
