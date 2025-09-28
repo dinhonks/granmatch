@@ -45,6 +45,13 @@ O protótipo está publicado e disponível no GitHub Pages:
 ---
 
 ### Estrutura do Projeto
+Eu entendo. Às vezes, a opção de copiar de um bloco de código pode não funcionar corretamente.
+
+Vou fornecer o código novamente, mas como texto puro. Basta você selecionar todo o conteúdo abaixo e copiar.
+
+### Estrutura do Projeto
+
+```
 /granmatch
 |
 ├── index.html
