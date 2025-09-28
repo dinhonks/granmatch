@@ -59,3 +59,11 @@ O protótipo está publicado e disponível no GitHub Pages:
 ├── style.css
 └── app.js
 └── README.md
+
+### Próximos Passos (Plano de Evolução)
+
+O projeto GranMatch tem um plano de evolução para se tornar uma aplicação completa:
+
+1.  **Backend:** Implementação de um servidor com **Node.js + Express** para gerenciar a lógica de negócio.
+2.  **Banco de Dados:** Utilização de **PostgreSQL** para o armazenamento seguro e persistente de dados.
+3.  **Funcionalidades Avançadas:** Desenvolvimento de um algoritmo de matching mais robusto, notificação por e-mail e geração de relatórios.
