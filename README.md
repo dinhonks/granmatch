@@ -65,3 +65,11 @@ O projeto GranMatch tem um plano de evolução para se tornar uma aplicação co
 1.  **Backend:** Implementação de um servidor com **Node.js + Express** para gerenciar a lógica de negócio.
 2.  **Banco de Dados:** Utilização de **PostgreSQL** para o armazenamento seguro e persistente de dados.
 3.  **Funcionalidades Avançadas:** Desenvolvimento de um algoritmo de matching mais robusto, notificação por e-mail e geração de relatórios.
+
+### Manual do Usuário (PDF)
+
+Para entender detalhadamente o fluxo de uso, as interações simuladas e as limitações do protótipo, consulte o manual completo.
+
+**Este link leva ao Manual do Usuário em formato PDF, que detalha o passo a passo de todas as funcionalidades e telas disponíveis no protótipo GranMatch.**
+
+[Manual do Usuário (PDF) - GranMatch](https://drive.google.com/file/d/1pjhFGwzMYVEG2Z0c5pUhTN0OtO2E_-Jg/view?usp=drive_link)
