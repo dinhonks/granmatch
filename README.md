@@ -5,10 +5,6 @@
 GranMatch é uma plataforma inteligente que busca resolver um problema real: a desconexão entre estudantes e o mercado de trabalho. Nosso objetivo é facilitar o acesso a estágios, empregos e freelas para alunos, ao mesmo tempo que ajudamos empresas a encontrar talentos de forma eficiente, indo além dos currículos tradicionais.
 
 ---
-## 🎬 Vídeo de Apresentação do Projeto
-
-[**Assista ao Pitch e Demonstração do Protótipo aqui**](https://youtu.be/JaAItE1L4os)
-
 ### Funcionalidades do Protótipo
 
 Este repositório contém o **protótipo funcional** do GranMatch, desenvolvido para validar a ideia e a experiência de usuário. Ele simula as principais funcionalidades do projeto completo, incluindo:
